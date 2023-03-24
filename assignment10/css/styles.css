@@ -1,0 +1,172 @@
+/*
+Author: Bernice Chen	
+Date: 3/21/22
+File Name: index.html
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, section, article, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body */
+body {
+	font-family: Verdana, Arial, sans-serif;
+}
+
+/* Style rules for mobile viewport */
+
+
+/* Style rule for header */
+.name {
+	margin-top: 0.2em;
+	color: black;
+	padding: 3% 5%;
+	text-align: right;
+	font-size: 2.5em;
+	
+}
+
+.lastname {
+	background-color: khaki; 
+	width: 250px;
+	text-align: right;
+	float: right;
+}
+
+/* Style rules for nav area */
+nav ul {
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	width: 200px;
+	background-color: khaki;  
+}
+
+nav li a {
+	display: block;
+	color: black;
+	padding: 3% 20%;
+	text-decoration: none;
+	font-size: 2em;
+}
+
+/* Style rules for main content */
+main {
+	padding: 1em;
+	background-color: #fff;
+}
+
+footer {
+	font-size: 1em;
+	text-align: center;
+}
+
+.social {
+    display: inline-block;
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+}
+
+.style {
+	text-decoration-line: underline;
+  	text-decoration-color: khaki;
+	text-decoration-thickness: 15px;
+}
+
+/* Style rules for figure */
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(8, 2fr);
+	grid-template-rows: repeat(8, 8vw);
+	grid-gap: 12px;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.item1 {
+	grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item2 {
+	grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.item3 {
+	grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 9;
+}
+
+.item4 {
+	grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 9;
+}
+
+
+/* Media Query */
+@media screen and (max-width: 700px), print {
+    .name {
+		font-size: 1.5em;
+	}
+
+	nav li a {
+		font-size: 1em;
+	}
+	
+	nav ul {
+		width: 100px;
+	}
+
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(4, 2fr);
+		grid-template-rows: repeat(26, 8vw);
+		grid-gap: 6px;
+	}
+
+	.item1 {
+		grid-column-start: 1;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 5;
+	}
+	
+	.item2 {
+		grid-column-start: 1;
+		grid-column-end: 5;
+		grid-row-start: 5;
+		grid-row-end: 9;
+	}
+	
+	.item3 {
+		grid-column-start: 1;
+		grid-column-end: 5;
+		grid-row-start: 9;
+		grid-row-end: 14;
+	}
+	
+	.item4 {
+		grid-column-start: 1;
+		grid-column-end: 5;
+		grid-row-start: 14;
+		grid-row-end: 27;
+	}
+}
+
